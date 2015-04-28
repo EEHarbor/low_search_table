@@ -1,6 +1,6 @@
 # Low Search Table for ExpressionEngine
 
-This add-on allows you to filter entries by group calculations of Grid or Matrix columns, like min (lowest), max (highest), avg (average), sum, and count (total rows) with [Low Search](http://gotolow.com/addons/low-search). For example, filter by entries that have a Grid field with x rows or more. This also allows you to order entries by that value. *Requires Low Search 4+*.
+This add-on allows you to filter entries by group calculations of Grid / Matrix columns, like lowest, highest, average, sum, and total rows with [Low Search](http://gotolow.com/addons/low-search). For example, filter by entries that have a Grid field with x rows or more. This also allows you to order entries by that value. *Requires Low Search 4+*.
 
 ## Installation
 
@@ -16,13 +16,13 @@ Once installed, you can use these parameters in this format:
 
 `field_name` should correspond to the Grid / Matrix field. `column_name` should be a valid column within that field.Valid calculations are:
 
-- `min`
-- `max`
-- `avg`
-- `sum`
-- `count` (does not require a column name to be specified)
+- `min`: lowest value;
+- `max`: highest value;
+- `avg`: average value;
+- `sum`: sum of all values;
+- `count`: total rows in field. Does not require a column name to be specified.
 
-Values should be *numeric* and can be prepended with the following operators:
+*Values* should be *numeric* and can be prepended with the following operators:
 
 - `>`
 - `>=`
@@ -33,6 +33,10 @@ Values should be *numeric* and can be prepended with the following operators:
 To retrieve the value associated with the entry, use a variable like this:
 
     {low_search_table:field_name:column_name:calculation:val}
+
+To order by a given value, use the parameter name, eg.
+
+    orderby="table:field_name:column_name:calculation"
 
 ## Examples
 
