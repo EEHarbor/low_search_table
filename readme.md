@@ -1,6 +1,6 @@
 # Low Search Table for ExpressionEngine
 
-This add-on allows you to filter entries by group calculations of Grid / Matrix columns, like lowest, highest, average, sum, and total rows with [Low Search](http://gotolow.com/addons/low-search). For example, filter by entries that have a Grid field with x rows or more. This also allows you to order entries by that value. *Requires Low Search 4+*.
+This add-on allows you to filter entries by group calculations of Grid / Matrix columns, like lowest, highest, average, sum, and total rows with [Low Search](http://gotolow.com/addons/low-search). For example, filter by entries that have a Grid field with x rows or more. This also allows you to order entries by that value. *Requires Low Search 4.2+*.
 
 ## Installation
 
